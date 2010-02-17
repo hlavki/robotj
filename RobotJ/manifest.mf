@@ -1,0 +1,6 @@
+Manifest-Version: 1.0
+OpenIDE-Module: eu.easyedu.robotj.ide
+OpenIDE-Module-Layer: eu/easyedu/robotj/ide/layer.xml
+OpenIDE-Module-Localizing-Bundle: eu/easyedu/robotj/ide/Bundle.properties
+OpenIDE-Module-Specification-Version: 1.0.4
+

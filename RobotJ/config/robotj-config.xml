@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<robot-config xmlns='http://robotj.easyedu.eu/schema/robotj-config'
+              xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+              xsi:schemaLocation='http://robotj.easyedu.eu/schema/robotj-config robotj-config.xsd'>
+    
+    <desktop>
+        <name>default desktop</name>
+        <size>
+            <width>400</width>
+            <height>300</height>
+        </size>
+        <objects>
+            <desktop-object xsi:type="RobotObject">
+                <name>robot1</name>
+                <position>
+                    <x>150</x>
+                    <y>200</y>
+                </position>
+                <color>
+                    <r>12</r>
+                    <g>32</g>
+                    <b>34</b>
+                </color>
+            </desktop-object>
+            <desktop-object xsi:type="RobotObject">
+                <name>robot3</name>
+                <position>
+                    <x>150</x>
+                    <y>200</y>
+                </position>
+                <color>
+                    <r>12</r>
+                    <g>32</g>
+                    <b>34</b>
+                </color>
+            </desktop-object>
+        </objects>
+    </desktop>
+    
+</robot-config>

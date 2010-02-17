@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+            targetNamespace="http://robotj.easyedu.eu/schema/robotj-config"
+            xmlns:ns="http://robotj.easyedu.eu/schema/robotj-config"
+            elementFormDefault="qualified">
+    
+    <xsd:element name="robot-config" type="ns:RobotConfig">
+        <xsd:unique name="desktop-name-uniqueness">
+            <xsd:selector xpath="ns:desktop"/>
+            <xsd:field    xpath="ns:name"/>
+        </xsd:unique>
+    </xsd:element>
+    
+    <xsd:complexType name="RobotConfig">
+        <xsd:sequence maxOccurs="unbounded">
+            <xsd:element name="desktop" type="ns:DesktopConfig"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    
+    
+    <xsd:complexType name="DesktopConfig">
+        <xsd:sequence>
+            <xsd:element name="name" type="xsd:string"/>
+            <xsd:element name="size" type="ns:Resolution"/>
+            <xsd:element name="objects" type="ns:ObjectsType">
+                <xsd:unique name="desktop-object-name-uniqueness">
+                    <xsd:selector xpath="ns:desktop-object"/>
+                    <xsd:field    xpath="ns:name"/>
+                </xsd:unique>
+            </xsd:element>
+        </xsd:sequence>
+    </xsd:complexType>
+    
+    <xsd:complexType name="ObjectsType">
+        <xsd:sequence minOccurs="0" maxOccurs="unbounded">
+            <xsd:element name="desktop-object" type="ns:DesktopObject"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    
+    <xsd:complexType name="Resolution">
+        <xsd:sequence>
+            <xsd:element name="width" type="xsd:int"/>
+            <xsd:element name="height" type="xsd:int"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    
+    <xsd:complexType name="Position">
+        <xsd:sequence>
+            <xsd:element name="x" type="xsd:int"/>
+            <xsd:element name="y" type="xsd:int"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    
+    <xsd:complexType name="DesktopObject" abstract="true">
+        <xsd:sequence>
+            <xsd:element name="name" type="xsd:string"/>
+            <xsd:element name="position" type="ns:Position"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    
+    <xsd:complexType name="RobotObject">
+        <xsd:complexContent>
+            <xsd:extension base="ns:DesktopObject">
+                <xsd:sequence>
+                    <xsd:element name="color" type="ns:Color"/>
+                    <xsd:element name="visible" type="xsd:boolean" default="true" minOccurs="0" />
+                </xsd:sequence>
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+    
+    <xsd:complexType name="Color">
+        <xsd:sequence>
+            <xsd:element name="r" type="xsd:nonNegativeInteger"/>
+            <xsd:element name="g" type="xsd:nonNegativeInteger"/>
+            <xsd:element name="b" type="xsd:nonNegativeInteger"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    
+</xsd:schema>

@@ -1,0 +1,28 @@
+/*
+* __NAME__.java
+*
+* Created on __DATE__, __TIME__
+*
+*/
+
+package Templates.Classes;
+
+import eu.easyedu.robotj.*;
+import eu.easyedu.robotj.canvas.PaintCanvas;
+import eu.easyedu.robotj.project.RobotProject;
+
+/**
+*
+* @author __USER__
+*/
+public class Class extends RobotProject {
+    
+    /** Creates a new instance of __NAME__ */
+    public Class(PaintCanvas canvas) {
+        super(canvas, "__NAME__");
+    }
+
+    public void runProject() {
+    }
+
+}

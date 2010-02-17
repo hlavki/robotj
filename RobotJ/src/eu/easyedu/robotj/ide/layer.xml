@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE filesystem PUBLIC "-//NetBeans//DTD Filesystem 1.1//EN" "http://www.netbeans.org/dtds/filesystem-1_1.dtd">
+<filesystem>
+    <folder name="Actions">
+        <folder name="Tools">
+            <file name="eu-easyedu-robotj-ide-RunInDesktopAction.instance"/>
+        </folder>
+        <folder name="Window">
+            <file name="eu-easyedu-robotj-ide-PaintDesktopAction.instance"/>
+        </folder>
+    </folder>
+    <folder name="Loaders">
+        <folder name="text">
+            <folder name="x-java">
+                <folder name="Actions">
+                    <attr name="org-netbeans-modules-profiler-actions-ProfileSingleActionPopup.instance/eu-easyedu-robotj-ide-separatorBefore.instance" boolvalue="true"/>
+                    <file name="eu-easyedu-robotj-ide-separatorBefore.instance">
+                        <attr name="instanceClass" stringvalue="javax.swing.JSeparator"/>
+                    </file>
+                    <attr name="eu-easyedu-robotj-ide-separatorBefore.instance/eu-easyedu-robotj-ide-RunInDesktop.shadow" boolvalue="true"/>
+                    <file name="eu-easyedu-robotj-ide-RunInDesktop.shadow">
+                        <attr name="originalFile" stringvalue="Actions/Tools/eu-easyedu-robotj-ide-RunInDesktopAction.instance"/>
+                    </file>
+                    <attr name="eu-easyedu-robotj-ide-RunInDesktop.shadow/java-project-separator-3.instance" boolvalue="true"/>
+                </folder>
+            </folder>
+        </folder>
+    </folder>
+    <folder name="Menu">
+        <folder name="Window">
+            <file name="PaintDesktopAction.shadow">
+                <attr name="originalFile" stringvalue="Actions/Window/eu-easyedu-robotj-ide-PaintDesktopAction.instance"/>
+            </file>
+        </folder>
+    </folder>
+    
+    <folder name="Templates">
+        <attr name="Classes/RobotJFiles" boolvalue="true"/>
+        <attr name="RobotJFiles/GUIForms" boolvalue="true"/>
+        <folder name="Project">
+            <folder name="RobotProjects">
+                <attr name="SystemFileSystem.localizingBundle" stringvalue="eu.easyedu.robotj.ide.Bundle"/>
+                <file name="RobotProjectProject.zip" url="RobotProjectProject.zip">
+                    <attr name="SystemFileSystem.icon" urlvalue="nbresloc:/eu/easyedu/robotj/ide/robot-project.png"/>
+                    <attr name="SystemFileSystem.localizingBundle" stringvalue="eu.easyedu.robotj.ide.Bundle"/>
+                    <attr name="instantiatingIterator" methodvalue="eu.easyedu.robotj.ide.RobotProjectWizardIterator.createIterator"/>
+                    <attr name="instantiatingWizardURL" urlvalue="nbresloc:/eu/easyedu/robotj/ide/RobotProjectDescription.html"/>
+                    <attr name="template" boolvalue="true"/>
+                </file>
+            </folder>
+        </folder>
+        <folder name="RobotJFiles">
+            <attr name="SystemFileSystem.localizingBundle" stringvalue="eu.easyedu.robotj.ide.Bundle"/>
+ 
+            <file name="NewRobotProjectClass.java" url="NewRobotProjectClass.template">
+                <attr name="template" boolvalue="true"/>
+                <attr name="SystemFileSystem.localizingBundle" stringvalue="eu.easyedu.robotj.ide.Bundle"/>
+                <attr name="SystemFileSystem.icon" urlvalue="nbresloc:/eu/easyedu/robotj/ide/robot-project.gif"/>
+                <attr name="instantiatingIterator" methodvalue="org.netbeans.spi.java.project.support.ui.templates.JavaTemplates.createJavaTemplateIterator"/>
+                <attr name="instantiatingWizardURL" urlvalue="nbresloc:/eu/easyedu/robotj/ide/NewRobotProjectClassDescription.html"/>
+            </file>
+        </folder>
+    </folder>
+    <folder name="Windows2">
+        <folder name="Components">
+            <file name="PaintDesktopTopComponent.settings" url="PaintDesktopTopComponentSettings.xml"/>
+        </folder>
+        <folder name="Modes">
+            <folder name="editor">
+                <file name="PaintDesktopTopComponent.wstcref" url="PaintDesktopTopComponentWstcref.xml"/>
+            </folder>
+        </folder>
+    </folder>
+    <folder name="Shortcuts">
+        <file name="DS-6.shadow">
+            <attr name="originalFile" stringvalue="Actions/Tools/eu-easyedu-robotj-ide-RunInDesktopAction.instance"/>
+        </file>
+    </folder>
+</filesystem>
